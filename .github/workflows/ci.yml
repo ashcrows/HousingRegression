@@ -10,8 +10,9 @@ on:
   pull_request:
     branches:
       - main
-      - reg
-      - hyper
+    paths-ignore:
+      - '**/reg_branch/**'
+      - '**/hyper_branch/**'
 
 jobs:
   build:
