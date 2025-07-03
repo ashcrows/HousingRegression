@@ -7,6 +7,11 @@ on:
     paths-ignore:
       - '**/reg_branch/**'
       - '**/hyper_branch/**'
+  pull_request:
+    branches:
+      - main
+      - reg
+      - hyper
 
 jobs:
   build:
