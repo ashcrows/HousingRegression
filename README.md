@@ -2,7 +2,7 @@
 
 
 Name- Ashish SInha
-ROll- G24AI1067
+Roll_no- G24AI1067
 Subject- MLOps
 
 
@@ -10,3 +10,6 @@ Python Libraries
 - pandas
 - numpy
 - scikit-learn
+
+GitHub Action:
+- CI/CD pipeline
