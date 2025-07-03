@@ -1,0 +1,26 @@
+name: CI Pipeline with Docker
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**/reg_branch/**'
+      - '**/hyper_branch/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: |
+        docker build -t housing-regression .
+
+    - name: Run container and execute script
+      run: |
+        docker run housing-regression
+        
